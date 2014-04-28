@@ -7,9 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "XMLReader.h"
 
 #define kTestText @"123 123 \\ 123 123"
-#define kRegexPattern @"\\"
+#define kRegexPattern @"\\b123\\b"
 
 @interface ViewController ()
 
@@ -31,6 +32,18 @@
     }
     else {
         NSLog(@"%@",error);
+    }
+    
+    NSError *xError;
+    
+    NSString *path=[[NSBundle mainBundle] pathForResource:@"test" ofType:@"xml"];
+    NSData *xmlData=[NSData dataWithContentsOfFile:path];
+    NSDictionary *dicFromXML = [XMLReader dictionaryForXMLData:xmlData error:&xError];
+    if (xError) {
+        NSLog(@"%@",error);
+    }
+    else {
+        NSLog(@"%@",dicFromXML);
     }
 }
 

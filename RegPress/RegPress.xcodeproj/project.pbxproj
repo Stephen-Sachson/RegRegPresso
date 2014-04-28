@@ -21,6 +21,8 @@
 		1CB7A4BE190E001900588563 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CB7A4A0190E001900588563 /* UIKit.framework */; };
 		1CB7A4C6190E001900588563 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1CB7A4C4190E001900588563 /* InfoPlist.strings */; };
 		1CB7A4C8190E001900588563 /* RegPressTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CB7A4C7190E001900588563 /* RegPressTests.m */; };
+		1CB7A4D2190E407D00588563 /* test.xml in Resources */ = {isa = PBXBuildFile; fileRef = 1CB7A4D1190E407D00588563 /* test.xml */; };
+		1CB7A4D5190E4EC400588563 /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CB7A4D4190E4EC400588563 /* XMLReader.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		1CB7A4C3190E001900588563 /* RegPressTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RegPressTests-Info.plist"; sourceTree = "<group>"; };
 		1CB7A4C5190E001900588563 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1CB7A4C7190E001900588563 /* RegPressTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegPressTests.m; sourceTree = "<group>"; };
+		1CB7A4D1190E407D00588563 /* test.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = test.xml; sourceTree = "<group>"; };
+		1CB7A4D3190E4EC400588563 /* XMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLReader.h; sourceTree = "<group>"; };
+		1CB7A4D4190E4EC400588563 /* XMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLReader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +87,7 @@
 		1CB7A490190E001800588563 = {
 			isa = PBXGroup;
 			children = (
+				1CB7A4D1190E407D00588563 /* test.xml */,
 				1CB7A4A2190E001900588563 /* RegPress */,
 				1CB7A4C1190E001900588563 /* RegPressTests */,
 				1CB7A49B190E001900588563 /* Frameworks */,
@@ -112,6 +118,8 @@
 		1CB7A4A2190E001900588563 /* RegPress */ = {
 			isa = PBXGroup;
 			children = (
+				1CB7A4D3190E4EC400588563 /* XMLReader.h */,
+				1CB7A4D4190E4EC400588563 /* XMLReader.m */,
 				1CB7A4AB190E001900588563 /* AppDelegate.h */,
 				1CB7A4AC190E001900588563 /* AppDelegate.m */,
 				1CB7A4AE190E001900588563 /* Main.storyboard */,
@@ -231,6 +239,7 @@
 				1CB7A4B5190E001900588563 /* Images.xcassets in Resources */,
 				1CB7A4A7190E001900588563 /* InfoPlist.strings in Resources */,
 				1CB7A4B0190E001900588563 /* Main.storyboard in Resources */,
+				1CB7A4D2190E407D00588563 /* test.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +260,7 @@
 			files = (
 				1CB7A4B3190E001900588563 /* ViewController.m in Sources */,
 				1CB7A4AD190E001900588563 /* AppDelegate.m in Sources */,
+				1CB7A4D5190E4EC400588563 /* XMLReader.m in Sources */,
 				1CB7A4A9190E001900588563 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
